@@ -1,0 +1,14 @@
+@using N1990.Episerver.Cms.Audit.Models
+@model ContentReferenceDetails
+
+@{
+    Layout = null;
+}
+
+<tr>
+    <td>@Model.Name</td>
+    <td colspan="3">
+        <a target="_blank" href="/episerver/cms/#viewsetting=&context=epi.cms.contentdata:///@Model.ContentLink.ID">@Model.ContentLink.ID</a>
+    </td>
+</tr>
+

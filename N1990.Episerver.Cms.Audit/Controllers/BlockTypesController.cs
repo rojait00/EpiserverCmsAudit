@@ -17,9 +17,11 @@ namespace N1990.Episerver.Cms.Audit.Controllers
 
         public ActionResult Index()
         {
-            var model = new CmsAuditPage();
-            model.ContentTypes = _cmsAuditor.GetContentTypesOfType<BlockType>();
-            model.JobLastRunTime = _cmsAuditor.JobLastRunTime<BlockTypeAudit>();
+            var model = new CmsAuditPage
+            {
+                ContentTypes = _cmsAuditor.GetContentTypesOfType<BlockType>(),
+                JobLastRunTime = _cmsAuditor.JobLastRunTime<BlockTypeAudit>()
+            };
             return View(model);
         }
 
