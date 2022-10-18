@@ -66,8 +66,8 @@ namespace N1990.Episerver.Cms.Audit.Business
             
             var abandonedBlocks =
                 new UrlMenuItem(
-                    _localizationService.GetString("/cmsaudit/menus/audit/abandonedBlocks", "Abandoned Blocks"),
-                    MenuPath + "/abandonedBlocks",
+                    _localizationService.GetString("/cmsaudit/menus/audit/abandonedblocks", "Abandoned Blocks"),
+                    MenuPath + "/abandonedblocks",
                     Paths.ToResource("CmsAudit", "AbandonedBlocks"))
                 {
                     IsAvailable = (request) => true,
@@ -80,7 +80,8 @@ namespace N1990.Episerver.Cms.Audit.Business
                 menuSites,
                 menuPageTypes,
                 menuBlockTypes,
-                menuVisitorGroups
+                menuVisitorGroups,
+                abandonedBlocks
             };
             return list;
         }

@@ -205,11 +205,12 @@
     <Content Include="modules\_protected\CmsAudit\Views\Shared\RenderUsage.cshtml" />
     <Content Include="modules\_protected\CmsAudit\Views\PageTypes\Index.cshtml" />
     <Content Include="modules\_protected\CmsAudit\Views\VisitorGroups\Index.cshtml" />
-    <None Include="modules\_protected\CmsAudit\Views\AbandonedBlocks\Index.cshtml" />
-    <None Include="modules\_protected\CmsAudit\Views\web.config">
+    <Content Include="modules\_protected\CmsAudit\Views\AbandonedBlocks\Index.cshtml" />
+    <Content Include="modules\_protected\CmsAudit\Views\web.config">
       <SubType>Designer</SubType>
-    </None>
+    </Content>
     <Content Include="modules\_protected\CmsAudit\Views\Shared\_layout.cshtml" />
+    <Content Include="modules\_protected\CmsAudit\Views\AbandonedBlocks\AbandonedBlocks.cshtml" />
     <None Include="packages.config" />
     <None Include="web.config.transform">
       <Generator>SettingsSingleFileGenerator</Generator>
